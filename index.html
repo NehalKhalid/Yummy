@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--& Logo -->
+    <link rel="icon" href="images/logo.png">
+    <!--! BootStrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--~ StyleSheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--^ FontAwesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+</head>
+<body>
+    <div class="loading align-items-center justify-content-center bg-black text-white">
+        <i class="fa-solid fa-spinner fa-spin fa-6x"></i>
+    </div>
+    <div class="side-nav">
+        <div class="side-nav-content p-4 flex-column d-flex justify-content-between text-white bg-black">
+            <div class="links">
+                <ul class="p-0 overflow-hidden">
+                    <li id="search" class="mb-3 pointer animate__animated">Search</li>
+                    <li id="cat" class="mb-3 pointer animate__animated">Categories</li>
+                    <li id="area" class="mb-3 pointer animate__animated">Area</li>
+                    <li id="ing" class="mb-3 pointer animate__animated">Ingredients</li>
+                    <li id="contact" class="mb-3 pointer animate__animated">Contact Us</li>
+                </ul>
+            </div>
+            <div class="side-nav-footer">
+                <div class="footer-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-solid fa-globe"></i></a>
+                </div>
+                <p>Copyright Â© 2019 All Rights <br> Reserved.</p>
+            </div>
+        </div>
+        <div class="side-nav-icon d-flex align-items-center flex-column justify-content-between py-4 px-2 text-black bg-white">
+            <img src="images/logo.png" alt="YummyLogo">
+            <i class="fa-solid pointer fa-xmark fs-1"></i>
+            <div class="d-flex flex-column ">
+                <a href="#"><i class="fa-solid fa-globe"></i></a>
+                <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="search container my-3" >
+        <div class="row py-4" id="search-content">
+        </div>
+    </div>
+    <div class="min-vh-100">
+        <div class="container">
+            <div class="row py-4 g-4" id="row-content">
+            </div>
+        </div>
+    </div>
+    <button onclick="getMealsByCategory()"></button>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

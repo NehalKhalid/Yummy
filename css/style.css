@@ -1,0 +1,58 @@
+/*! General Styles */
+
+.search .form-control::placeholder{
+    color: white;
+}
+body{
+    background-color:#0D0D0D;
+    overflow: hidden;
+    color: white;
+}
+li{
+    list-style: none;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.pointer{
+    cursor: pointer;
+}
+
+
+/*~ SideNav */
+.side-nav{
+    position: fixed;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+    transition: left 500ms;
+}
+.side-nav-icon img{
+    width: 50px;
+}
+/*^ Loading */
+.loading{
+    display: flex;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+}
+
+.desc-layer{
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    background: #f9f6f6ca;
+    transition: top 500ms;
+}
+.meal:hover .desc-layer{
+    top: 0;
+}
